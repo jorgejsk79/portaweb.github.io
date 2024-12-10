@@ -1,0 +1,173 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Encabezado fijo */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #007BFF;
+    color: white;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+header > nav > ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav > ul > li {
+    margin: 0 15px;
+}
+
+nav > ul > li > a{
+    text-decoration: none;
+    color: #484747;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.4s;
+}
+
+header nav ul li a:hover {
+    color: #FFD700;
+}
+
+/* Submenus */
+.m_vertical{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    background-color: #007bff7d;
+    width: 100vw;
+}   
+
+.m_vertical li{
+    list-style: none;
+    margin: 15px;
+}
+
+.m_vertical a{
+    text-decoration: none;
+    color: #333;
+    transition: color 0.4s;
+}
+
+.m_horizontal li:hover .m_vertical{
+    display: block;
+} 
+/* Seccion 1 */ 
+
+.sec1 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to bottom, #007BFF, #032e5c);
+    color: white;
+    padding: 20px;
+}
+
+.sec1 h1 {
+    font-size: 40px;
+}
+
+.sec1 p {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+/* Seccion 2 */
+.sec2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contain-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contain-cards div{
+    margin: 15px;
+    text-align: center;
+    transition:  transform 0.4s;
+}
+
+.contain-cards div:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 9px 4px #949393;
+}
+
+
+/* Seccion 3 */ 
+
+.sec3{
+    text-align: center;
+}
+
+/* Formulario */
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 400px;
+    margin: 15px auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form input[type="button"] {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
+#contacto{
+    padding: 25px;
+    text-align: center;
+}
+
+/* Pie de página */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}

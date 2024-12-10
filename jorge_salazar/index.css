@@ -1,0 +1,154 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.titulo{
+   color: black;
+    padding: 10px;
+    text-align: center;
+
+}
+
+header{
+    background-color: #1f0aded0;
+    padding: 10px;
+    position: sticky;
+    flex-wrap: wrap;
+    top: 0;
+    z-index: 10;
+    width: 100vw;
+    box-sizing: border-box;
+}
+li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+a{
+    text-decoration: none;
+    color: #ede3e3;
+    font-size: 25px;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 10px;
+}
+ nav a:hover{
+    background-color: #91d432cf;
+}
+header img{
+    width:200px;
+    height: 150px;
+    position: absolute;
+    top: 0px;
+    right: 80px;
+}
+
+.reseña{
+    background-color: #98959f;
+    width: 700px;
+    margin: 0 auto;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.reseña h1{
+    text-align: center;
+    
+}
+.reseña img{
+    width: 50vw;
+    height: 260px;
+    position: relative;
+    z-index: 0;
+}
+
+
+.tarjetas{
+    text-align: center;
+}
+.tarjetas div{
+    width: 250px;
+    height: 350px;
+    flex-wrap: wrap;
+    background-color: #5030de94;
+    display: inline-block;
+    margin: 25px 20px;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 0 10px 0 #000 ;
+     transition: width,height, 0.5s;
+     text-align:center ;
+}
+.tarjetas div:hover{
+    width: 330px;
+    height: 410px;
+
+   
+}
+.tarjetas div p{
+    width: 280px;
+    text-align: justify;
+    display: inline-block;
+}
+
+.tarjetas div img{
+    width: 280px;
+    height: 150px;
+    border-radius: 15px;
+}
+
+form {
+    margin-top: 20px;
+   
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #080214;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+.cajafor {
+    width: 500px;
+    height: 500px;
+    text-align: center;
+   background-color: rgb(162, 167, 167) ; 
+   margin: 20px auto;
+   padding: 30px;
+  
+
+}
+
+
+
+footer{
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 15px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100vw;
+}
